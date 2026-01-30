@@ -1,18 +1,10 @@
 ﻿using System;
-
 class Program
 {
-    static void Main(string[] args)
+   public static void Main(string[] args)
     {
-        // Strings
-        StringExamples.Run();
-
-        // Ref / In / Out
-        RefExample.Run();
-        InExample.Run();
-        OutExample.Run();
-
-        // OOP
-        OopDemo.Run();
+       bool res = Enumerations.IsValidAccountStatus((Enumerations.AccountStatus) 1);
+        Console.WriteLine(res);
+        
     }
 }
