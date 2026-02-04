@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Globalization;
 
-internal static class StringExamples
+internal class StringExamples
 {
-    public static void Run()
+    public void Run()
     {
         string s = "this is kirubha malaiappan.";
         TextInfo info = CultureInfo.CurrentCulture.TextInfo;
@@ -11,7 +11,7 @@ internal static class StringExamples
         Console.WriteLine(s.ToUpper());
         Console.WriteLine(info.ToTitleCase(s));
     }
-    internal static void Print(string s)
+    internal void Print(string s)
     {
         for (int i = 0; i < s.Length; i++)
         {
