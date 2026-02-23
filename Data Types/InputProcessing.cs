@@ -50,7 +50,7 @@ public class InputProcessing{
         if (int.TryParse(val, out int enumValue) && Enum.IsDefined(typeof(UserId), enumValue)) // Enum.TryParse<UserId>("Dhanu", out var user);
 
         {
-            Console.WriteLine((UserId)val);
+            Console.WriteLine((UserId) enumValue);
 
 		}
 		else{

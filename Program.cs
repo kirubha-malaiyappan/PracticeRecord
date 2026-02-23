@@ -1,4 +1,5 @@
 ﻿
+using C_Practice.Important;
 using Oops;
 using System;
 class Program : Object
@@ -6,19 +7,26 @@ class Program : Object
    public static void Main(string[] args)
         
     {
-        Dog obj = new Dog("Puppy");
-        Animal a = obj as Animal;
+        //try
+        //{
+            int a = 6 / 5;
+            if(a%2 == 1)
+            {
+                throw new DivideByOddNo();
+           }
+        //Console.WriteLine("haiii");
 
-        if (a is Animal)
-        {
-            Console.WriteLine(a.Name);
-        }
-        Console.WriteLine(a.GetHashCode());
+        //}
+        //catch (DivideByOddNo ex)
+        //{
+        //    Console.WriteLine(ex.Message);
 
-        StringExamples se = new StringExamples();
+        //}
+        //finally
+        //{
+        //    Console.WriteLine("program ended");
+        //}
+     
 
-        Console.WriteLine(se.ToString());
-
-        
     }
 }
