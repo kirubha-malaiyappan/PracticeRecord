@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace C_Practice.Delegates
 {
-    public delegate String DownloadCompletedCallBack();
+    
     internal class DelegatesDemo
     {
 
@@ -16,19 +17,16 @@ namespace C_Practice.Delegates
         public void MainCall()
         {
             DelegatesDemo obj = new DelegatesDemo();
-            DownloadCompletedCallBack callBack = DownloadCompleted;
-            obj.DownloadStarted(callBack);
+            obj.DownloadStarted(DownloadCompleted);
         }
-        public void DownloadStarted(DownloadCompletedCallBack com)
+        public void DownloadStarted(Func<string> com)
         {
             Console.WriteLine("Downloading");
             Thread.Sleep(1000);
             string result = com();
-
+            Console.WriteLine(result);
 
         }
-
-
 
 
      
