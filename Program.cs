@@ -9,11 +9,11 @@ class Program : Object
     {
         //try
         //{
-            int a = 6 / 5;
-            if(a%2 == 1)
-            {
-                throw new DivideByOddNo();
-           }
+           // int a = 6 / 5;
+           // if(a%2 == 1)
+           // {
+           //     throw new DivideByOddNo();
+           //}
         //Console.WriteLine("haiii");
 
         //}
