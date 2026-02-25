@@ -28,20 +28,7 @@ namespace Oops
         {
             Console.WriteLine("Dog is running");
         }
-        //public override void Dance()
-        //{
-        //    Console.WriteLine("Dancing");
-        //}
-        //public override void Eat()
-        //{
-        //    Console.WriteLine("Eating");
-
-        //}
-        //public override void Run()
-        //{
-        //    Console.WriteLine("Running");
-
-        //}
+        
 
     }
 }

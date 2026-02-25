@@ -1,32 +1,19 @@
 ﻿
-using C_Practice.Important;
+using System.Reflection;
 using Oops;
-using System;
+
 class Program : Object
 {
-   public static void Main(string[] args)
-        
+    public static void Main(string[] args)
+
     {
-        //try
-        //{
-           // int a = 6 / 5;
-           // if(a%2 == 1)
-           // {
-           //     throw new DivideByOddNo();
-           //}
-        //Console.WriteLine("haiii");
+        Type t = Type.GetType("Oops.Dog");
+        PropertyInfo[] properties = t.GetProperties();
+        foreach (PropertyInfo property in properties)
+        {
+            Console.WriteLine(property.Name);
+        }
 
-        //}
-        //catch (DivideByOddNo ex)
-        //{
-        //    Console.WriteLine(ex.Message);
-
-        //}
-        //finally
-        //{
-        //    Console.WriteLine("program ended");
-        //}
-     
 
     }
 }

@@ -6,7 +6,8 @@ namespace C_Practice.Important
 {
     internal class ExceptionsDemo
     {
-       internal void print()
+        #region Methods
+        internal void print()
         {
             try
             {
@@ -32,5 +33,7 @@ namespace C_Practice.Important
            
 
         }
+        #endregion
     }
 }
+
