@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-internal class StringExamples
+public class StringExamples
 {
     public void Run()
     {
@@ -31,8 +31,49 @@ internal class StringExamples
     internal static void InterpolationAndLiteral()
     {
         string firstName = "Kirubha";
-        string path = @$"c:\{firstName}\""Users""";//double quotes in string
+        string path = @$"c:\{firstName}\""Users""";//double quotes in string(this is for @)
+        string hehe = $"\" hello \"";
         Console.WriteLine(path);
+
+    }
+
+    internal static void PadandTrim()
+    {
+        string firstName = "     Kirubha      ";
+        string res = firstName.Trim();
+        res = firstName.TrimStart();
+        res = firstName.TrimEnd();
+        res = firstName.PadLeft(10, '0');
+
+
+    }
+
+    internal static void Search()
+    {
+        string test = "This is a test string";
+        bool res;
+        int resInt;
+        res = test.StartsWith("This");
+        res = test.EndsWith(".txt"); // cna be used to find text format
+        res = test.Contains("is");
+        resInt = test.IndexOf("is");// ("is", 10) starts at 10th index
+        resInt = test.LastIndexOf("test");// ("is", 45) starts from 45 and goes to start
+
+
+    }
+
+    
+    public static void CompareToHelpers(string testA, string? testB)
+    {
+        int res = testA.CompareTo(testB);
+        switch (res)
+        {
+            case > 0:
+                Console.WriteLine($"CompareTo: {testB ?? "null"} comes before {testA}");
+                break;
+            default:
+                break;
+        }
 
     }
 }

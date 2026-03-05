@@ -4,16 +4,15 @@ using Oops;
 
 class Program : Object
 {
-    public static void Main(string[] args)
+    //public static void Main(string[] args)
 
-    {
-        Type t = Type.GetType("Oops.Dog");
-        PropertyInfo[] properties = t.GetProperties();
-        foreach (PropertyInfo property in properties)
-        {
-            Console.WriteLine(property.Name);
-        }
+    //{
 
+    //    DateTime dateTime = DateTime.Now;
+    //    DateOnly dateOnly = DateOnly.FromDateTime(DateTime.Now);
+    //    TimeOnly timeOnly = TimeOnly.FromDateTime(DateTime.Now);
+    //    Console.WriteLine(dateOnly.Day);
+    //    Console.WriteLine(timeOnly.Minute);
 
-    }
+    //}
 }
